@@ -1,5 +1,13 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import {
+  DevTools,
+  NgxTolgeeModule,
+  Tolgee,
+  TOLGEE_INSTANCE,
+  FormatSimple,
+} from "@tolgee/ngx";
+import { environment } from "../environments/environment.development";
 
 import { AppComponent } from "./app.component";
 import { LanguageSwitcher } from "./language-switcher/language-switcher.component";
@@ -21,8 +29,29 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
     HelloWorldInterpolationComponent,
     HelloWorldBindingsComponent,
   ],
-  imports: [BrowserModule],
-  providers: [],
+  imports: [NgxTolgeeModule, BrowserModule],
+  providers: [
+    {
+      provide: TOLGEE_INSTANCE,
+      useFactory: () => {
+        return Tolgee()
+          .use(DevTools())
+          .use(FormatSimple())
+          .init({
+            availableLanguages: ["en", "uk", "de"],
+
+            // for development
+            apiUrl: environment.tolgeeApiUrl,
+            apiKey: environment.tolgeeApiKey,
+            fallbackLanguage: "en",
+            defaultLanguage: "en",
+
+            // for production
+            staticData: {},
+          });
+      },
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
