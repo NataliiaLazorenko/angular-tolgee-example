@@ -10,7 +10,7 @@ import {
 import { environment } from "../environments/environment.development";
 
 import { AppComponent } from "./app.component";
-import { LanguageSwitcher } from "./language-switcher/language-switcher.component";
+import { LangSelectorComponent } from "./lang-selector/lang-selector.component";
 import { HelloWorldComponent } from "./hello-world/hello-world.component";
 import { HelloWorldTemplateComponent } from "./hello-world-template.component";
 import { HelloWorldNgIfComponent } from "./hello-world-ngif/hello-world-ngif.component";
@@ -21,7 +21,7 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
 @NgModule({
   declarations: [
     AppComponent,
-    LanguageSwitcher,
+    LangSelectorComponent,
     HelloWorldComponent,
     HelloWorldTemplateComponent,
     HelloWorldNgIfComponent,
