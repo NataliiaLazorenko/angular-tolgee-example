@@ -3,11 +3,11 @@ import { Component } from "@angular/core";
 @Component({
   selector: "hello-world-template",
   template: `
-    <h2>Hello World Template</h2>
+    <h2>{{ "Hello World Template" | translate }}</h2>
     <button type="button" (click)="onEditClick()">
-      Make text editable!
+      {{ "Make text editable!" | translate }}
     </button>
-    <p [contentEditable]="canEdit">{{ message }}</p>
+    <p [contentEditable]="canEdit">{{ message | translate }}</p>
   `,
 })
 export class HelloWorldTemplateComponent {

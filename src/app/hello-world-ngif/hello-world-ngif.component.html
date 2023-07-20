@@ -1,13 +1,20 @@
-<h2>Hello World: ngIf!</h2>
+<h2>{{ "Hello World:" | translate }} ngIf!</h2>
 
-<button type="button" (click)="onEditClick()">Make text editable!</button>
+<button type="button" (click)="onEditClick()">
+  {{ "Make text editable!" | translate }}
+</button>
 
 <div *ngIf="canEdit; else noEdit">
-  <p>You can edit the following paragraph.</p>
+  <p>{{ "You can edit the following paragraph." | translate }}</p>
 </div>
 
 <ng-template #noEdit>
-  <p>The following paragraph is read only. Try clicking the button!</p>
+  <p>
+    {{
+      "The following paragraph is read only. Try clicking the button!"
+        | translate
+    }}
+  </p>
 </ng-template>
 
-<p [contentEditable]="canEdit">{{ message }}</p>
+<p [contentEditable]="canEdit">{{ message | translate }}</p>

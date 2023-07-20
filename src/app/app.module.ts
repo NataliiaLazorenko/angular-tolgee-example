@@ -38,7 +38,7 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
           .use(DevTools())
           .use(FormatSimple())
           .init({
-            availableLanguages: ["en", "uk", "de"],
+            availableLanguages: ["en", "uk", "de", "fr"],
 
             // for development
             apiUrl: environment.tolgeeApiUrl,
