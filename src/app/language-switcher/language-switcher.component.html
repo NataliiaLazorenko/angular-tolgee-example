@@ -1,0 +1,7 @@
+<ul [style.listStyle]="listStyle" [style.marginLeft]="marginLeft">
+  <li *ngFor="let locale of localesList" [style.color]="fontColor">
+    <a href="/{{ locale.code }}/" [style.textDecoration]="textDecoration">
+      {{ locale.label }}
+    </a>
+  </li>
+</ul>
