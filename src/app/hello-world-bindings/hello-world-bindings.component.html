@@ -1,9 +1,9 @@
 <button type="button" [disabled]="!canClick" (click)="sayMessage()">
-  Trigger alert message
+  {{ "Trigger alert message" | translate }}
 </button>
 
 <p [id]="sayHelloId" [style.color]="fontColor">
-  You can set my color in the component!
+  {{ "You can set my color in the component!" | translate }}
 </p>
 
-<p>My color is {{ fontColorText }}</p>
+<p>{{ "My color is" | translate }} {{ fontColorText | translate }}</p>
