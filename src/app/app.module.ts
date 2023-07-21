@@ -49,7 +49,11 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
             defaultLanguage: "uk",
 
             // for production
-            staticData: {},
+            staticData: {
+              en: () => import("../i18n/en.json"),
+              de: () => import("../i18n/de.json"),
+              uk: () => import("../i18n/uk.json"),
+            },
           });
       },
     },

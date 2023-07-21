@@ -1,0 +1,14 @@
+{
+  "blue" : "blue",
+  "Hello World" : "Hello World",
+  "Hello World:" : "Hello World:",
+  "Hello, World!" : "Hello, World!",
+  "Hello World: ngIf!" : "Hello World: ngIf!",
+  "Hello World Template" : "Hello World Template",
+  "I'm read only!" : "I'm read only!",
+  "My color is" : "My color is",
+  "This is my first component!" : "This is my first component!",
+  "Trigger alert message" : "Trigger alert message",
+  "You can edit me!" : "You can edit me!",
+  "You can set my color in the component!" : "You can set my color in the component!"
+}

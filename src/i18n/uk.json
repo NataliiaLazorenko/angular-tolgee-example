@@ -1,0 +1,14 @@
+{
+  "blue" : "синій",
+  "Hello World" : "Привіт світе",
+  "Hello World:" : "Привіт Світе:",
+  "Hello, World!" : "Привіт, Світе!",
+  "Hello World: ngIf!" : "Привіт світе: ngIf!",
+  "Hello World Template" : "Привіт Світе Шаблон",
+  "I'm read only!" : "Я лише для читання!",
+  "My color is" : "Мій колір",
+  "This is my first component!" : "Це мій перший компонент!",
+  "Trigger alert message" : "Активувати сповіщення",
+  "You can edit me!" : "Ви можете мене редагувати!",
+  "You can set my color in the component!" : "Ви можете задати мій колір у компоненті!"
+}
