@@ -8,7 +8,7 @@ export class LanguageSwitcher {
   fontColor = "grey";
   textDecoration = "none";
   listStyle = "none";
-  marginLeft = "80%";
+  marginLeft = "60vw";
 
   localesList = [
     { code: "en-US", label: "🇬🇧 English" },

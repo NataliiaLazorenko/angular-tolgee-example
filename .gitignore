@@ -32,5 +32,4 @@ testem.log
 /typings
 
 /.angular
-**/environment.ts
 **/environment.development.ts
