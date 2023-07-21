@@ -6,6 +6,7 @@ import {
   Tolgee,
   TOLGEE_INSTANCE,
   FormatSimple,
+  LanguageDetector,
 } from "@tolgee/ngx";
 import { environment } from "../environments/environment.development";
 
@@ -37,6 +38,7 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
         return Tolgee()
           .use(DevTools())
           .use(FormatSimple())
+          .use(LanguageDetector())
           .init({
             availableLanguages: ["en", "uk", "de", "fr"],
 
@@ -44,7 +46,7 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
             apiUrl: environment.tolgeeApiUrl,
             apiKey: environment.tolgeeApiKey,
             fallbackLanguage: "en",
-            defaultLanguage: "en",
+            defaultLanguage: "uk",
 
             // for production
             staticData: {},
