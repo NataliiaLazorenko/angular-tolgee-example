@@ -8,7 +8,7 @@ import {
   FormatSimple,
   LanguageDetector,
 } from "@tolgee/ngx";
-// import { environment } from "../environments/environment.development";
+import { environment } from "../environments/environment";
 
 import { AppComponent } from "./app.component";
 import { LangSelectorComponent } from "./lang-selector/lang-selector.component";
@@ -43,8 +43,8 @@ import { HelloWorldBindingsComponent } from "./hello-world-bindings/hello-world-
             availableLanguages: ["en", "uk", "de", "fr"],
 
             // for development
-            // apiUrl: environment.tolgeeApiUrl,
-            // apiKey: environment.tolgeeApiKey,
+            apiUrl: environment.tolgeeApiUrl,
+            apiKey: environment.tolgeeApiKey,
             fallbackLanguage: "en",
             defaultLanguage: "uk",
 
